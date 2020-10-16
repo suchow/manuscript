@@ -1,6 +1,6 @@
 dist: trusty
 sudo: true
-language: generic
+language: python
 install:
   - gem install danger-prose
   - gem install danger-commit_lint
