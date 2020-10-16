@@ -8,3 +8,5 @@ install:
   - gem install danger-welcome_message
   - pip install proselint
 before_script: bundle exec danger
+script:
+  - echo "hello"
