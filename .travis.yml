@@ -1,0 +1,13 @@
+dist: trusty
+sudo: false
+language: generic
+install:
+  - gem install danger-prose
+  - gem install danger-commit_lint
+  - gem install danger-welcome_message
+  - pip install proselint
+script:
+  - prose.disable_linters = ["misc.scare_quotes", "misc.tense_present"]
+  - prose.lint_files
+  - commit_lint.check
+  - welcome_message.greet
