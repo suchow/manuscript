@@ -2,7 +2,9 @@ dist: trusty
 sudo: true
 language: python
 install:
+  - gem install danger
   - gem install danger-prose
   - gem install danger-commit_lint
   - gem install danger-welcome_message
   - pip install proselint
+before_script: bundle exec danger
