@@ -9,3 +9,4 @@ warn("Lots of changes here!") if git.lines_of_code > 500
 
 prose.disable_linters = ["misc.scare_quotes", "misc.tense_present"]
 prose.lint_files
+prose.check_spelling markdown_files
